@@ -1,6 +1,18 @@
 import numpy as np
+import sys
+import urllib.request
 
-data=np.load(file=".npy") ## Input the file's path and name to load initial data.
+def dl_progress(count, block_size, total_size):
+    sys.stdout.write('\r %d%% of %d MB' %(100*count*block_size/total_size, total_size/1024/1024))
+savename = "./U_p_1000.npy"## Input the file's path and name to save initial data.
+
+url = "https://dl.dropboxusercontent.com/s/ttjx549flh3hn69/U_p_1000.npy" ## dowmloading link
+print('Downloading:',savename)
+
+urllib.request.urlretrieve(url, savename, dl_progress)
+
+
+data=np.load(file="./U_p_1000.npy") ## Input the file's path and name to load initial data which is same as last one.
 
 u,v,w,p=np.split(data,4,axis=-1)
 
