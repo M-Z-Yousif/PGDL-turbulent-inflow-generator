@@ -6,7 +6,7 @@ We utilise the combination of a multiscale convolutional
 auto-encoder with a sub-pixel convolution layer (MSCSP-AE) and a long short-term
 memory (LSTM) model. Physical constraints represented by flow gradient, Reynolds
 stress tensor, and spectral content of the flow are embedded in the loss function of
-the MSCSP-AE to force the model to generate realistic turbulent inflow conditions
+MSCSP-AE to force the model to generate realistic turbulent inflow conditions
 with accurate statistics and spectra, as compared with the ground truth data. 
 
 ![Fig2](https://user-images.githubusercontent.com/60691960/145676185-ab8745d6-f87e-48ee-879e-5695b940db5f.png)
