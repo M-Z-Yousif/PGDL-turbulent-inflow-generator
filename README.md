@@ -2,7 +2,7 @@
 
 ## Overview
 
-We utilise the combination of a multiscale convolutional
+We utilize the combination of a multiscale convolutional
 auto-encoder with a sub-pixel convolution layer (MSCSP-AE) and a long short-term
 memory (LSTM) model. Physical constraints represented by flow gradient, Reynolds
 stress tensor, and spectral content of the flow are embedded in the loss function of
